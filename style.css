@@ -1,29 +1,27 @@
-* {    box-sizing: border-box;
-}
-
-.container {
-    width: 100%;
-    height: 600px;
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-/* when we are using flex-direction justify-content is in charge of vertical x-axis and align-items is in charge of horizontal y  */
-
-/* when we are making changes in boxes without using flex-direction 
-justify-content is in charge of y horizontally while align-items is in charge of x-axis vertically */
-
-
-
 .box {
+    border: 4px solid lightblue;
     width: 100px;
     height: 100px;
-    border: 2px solid black;
-
 }
 
+.box-small {
+    width: 50px;
+    height: 50px ;
+    margin: 24px;
+}
 
+/* with child you can customize the padding, border and etc */
+
+.box-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* with the parent you can place it not customize the padding or border */
+
+.container {
+    border: 4px solid lightblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
