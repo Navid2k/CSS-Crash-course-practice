@@ -1,27 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid lightblue;
+    padding: 24px 24px 0 24px;
+}
+
+/* whenever you want to set width you never hard code it because it makes it look ugly always use width: 100%; / max-width: x or 600px; in this case */
+.row {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+/* how do you center it you write margin: 0 auto; or go to parent .container write display: flex; justify-content: center; */
+
+/* yes if you only use width:600px; it is 600px but if you resize the page it makes it look very ugly asf thats why first you use width: 100%; and then choose the width size you want */
+
+/* it makes the screen responsive  */
+
+
+.title {
+    border: 4px solid lightblue;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+
 .box {
     border: 4px solid lightblue;
-    width: 100px;
+    width: 30%;
     height: 100px;
+    margin-bottom: 24px;
 }
-
-.box-small {
-    width: 50px;
-    height: 50px ;
-    margin: 24px;
-}
-
-/* with child you can customize the padding, border and etc */
 
 .box-wrapper {
     display: flex;
-    align-items: center;
-}
-
-/* with the parent you can place it not customize the padding or border */
-
-.container {
-    border: 4px solid lightblue;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 24px;
+
 }
+
+/* use of flex-wrap: wrap; is that it respects the "width" that would've gone to the right side and kept on continuing it makes it go onto the next row */
+
+
